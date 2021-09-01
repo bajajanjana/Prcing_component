@@ -1,6 +1,6 @@
 import "./perks_nd_trial.css";
 import check from "../../../images/icon-check.svg";
-const Perks_nd_trial = () => {
+const Perks_Nd_Trial = () => {
   return (
     <div className="flex1">
       <div className="flex2">
@@ -25,4 +25,4 @@ const Perks_nd_trial = () => {
     </div>
   );
 };
-export default Perks_nd_trial;
+export default Perks_Nd_Trial;
