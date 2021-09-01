@@ -20,6 +20,7 @@ const Toggle = styled.button`
   position:fixed;
   bottom:10px;
   right:10px;
+  margin-left:5px;
 `;
 const Page = styled.div`
   display: flex;
