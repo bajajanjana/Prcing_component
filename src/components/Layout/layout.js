@@ -18,9 +18,9 @@ const Toggle = styled.button`
   }
   transition: all 0.5s ease;
   position:fixed;
-  bottom:10px;
-  right:10px;
-  margin-left:5px;
+  bottom:5px;
+  right:5px;
+  z-index:5;
 `;
 const Page = styled.div`
   display: flex;
