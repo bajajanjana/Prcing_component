@@ -20,13 +20,15 @@
     font-size: small;
     text-align: justify;
 }
-/* @media(max-width:768px){
-    .line_change{
-        display: block;
+@media(max-width:768px){
+    .header{
+        padding: 25px;
     }
-} */
+    
+}
 @media(max-width:375px){
-    .line_change{
-        display: block;
+    .header{
+        padding: 25px;
     }
+    
 }
