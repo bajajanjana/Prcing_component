@@ -13,8 +13,10 @@
     text-align: justify;
     color:hsl(227, 35%, 25%);
     font-weight: bolder;
+    text-align: justify;
 }
 .header p{
     color:  hsl(225, 20%, 60%);
     font-size: small;
+    text-align: justify;
 }
