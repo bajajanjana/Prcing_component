@@ -21,6 +21,14 @@ const Toggle = styled.button`
   bottom: 5px;
   right: 5px;
   z-index: 5;
+  @media (max-width: 768px) {
+    top: 5px;
+    right: 5px;
+  }
+  @media (max-width: 375px) {
+    top: 5px;
+    right: 5px;
+  }
 `;
 const Page = styled.div`
   display: flex;
