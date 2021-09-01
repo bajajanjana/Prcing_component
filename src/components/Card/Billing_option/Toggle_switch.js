@@ -1,3 +1,4 @@
+import React,{useState} from "react";
 import "./Toggle_switch.css";
 const ToggleSwitch = (props) => {
     const inputSwitchHandler=(event)=>{
@@ -5,13 +6,14 @@ const ToggleSwitch = (props) => {
         // console.log(event.target.value);
         if(event.target.value==="on")
         {
-            // event.target.value="true";
+            event.target.value="off";
             props.onNewInput(true);
         }
         else
         {
-            // event.target.value="false";
+            event.target.value="on";
             props.onNewInput(false);
+            //console.log(false);
         }
     }
   return (
