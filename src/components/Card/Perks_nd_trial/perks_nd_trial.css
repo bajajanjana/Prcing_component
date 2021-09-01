@@ -1,0 +1,61 @@
+.flex1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: center;
+    padding-right: 0px;
+}
+.flex1 ul{
+    padding-left: 0px !important;
+}
+.flex1 ul img{
+    margin-right: 1rem;
+}
+.flex2{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.perks_list{
+    list-style: none;
+}
+.trial_btn{
+    padding: 8px 40px;
+    background-color:hsl(227, 35%, 25%);
+    border-radius: 20px;
+    color: hsl(226, 100%, 87%);
+    border: none;
+    opacity: 1;
+}
+.trial_btn:hover{
+    animation-name: fade;
+    animation-duration:1s;
+    /* animation-iteration-count: infinite;  */
+    animation-timing-function:ease; 
+    animation-fill-mode:forwards;
+    /* transition: all 0.3s ease-in 0s; */
+    
+}
+@keyframes fade {
+    from{
+       background-color:hsl(227, 35%, 25%);
+       color: hsl(226, 100%, 87%);
+       border: none;
+    }
+    to{
+       background-color: white;
+       color:hsl(227, 35%, 25%) ;
+       border: 2px solid hsl(227, 35%, 25%);
+    }
+}
+@media(max-width:768px){
+    .flex1{
+        flex-direction: column;
+    }
+}
+@media(max-width:375px){
+    .flex1{
+        flex-direction: column;
+    }
+}

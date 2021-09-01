@@ -1,0 +1,63 @@
+.input_slider{
+    -webkit-appearance: none; 
+    width: 100%;
+    background: hsl(224, 65%, 95%) ;
+    border-radius: 10px;
+    opacity: 0.8;
+    height: 0.6rem;
+    /* background: linear-gradient(to right, green 0%, green 50%, #fff 50%, #fff 100%); */
+}
+.input_slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 30px; 
+    height: 30px; 
+    outline: none;
+    /* background:hsl(174, 77%, 80%); */
+    cursor: pointer; 
+    border-radius: 20px;
+    background-image: url("../../../images/icon-slider.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:hsl(174, 86%, 45%)  ;
+    box-shadow: 0px 0px 12px 0px hsl(174, 86%, 45%);
+   
+  }
+  
+.input_slider:hover {
+    opacity: 1; 
+  }
+.price_rate_withslider {
+    display: none;
+    
+}
+@media(max-width:768px){
+    .price_rate_withslider {
+        position: relative;
+        display: flex;
+        align-items: center;
+       justify-content: center;
+       margin-top: 2rem;
+    }
+    .price_rate_withslider :nth-child(2)
+    {
+        position: relative;
+        top:-10px;
+        margin-left: 5px;
+    }
+}
+@media(max-width:375px){
+    .price_rate_withslider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        
+    }
+    .price_rate_withslider :nth-child(2)
+    {
+        position: relative;
+        top:-10px;
+        margin-left: 5px;
+    }
+}
