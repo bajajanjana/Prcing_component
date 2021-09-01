@@ -17,10 +17,18 @@ const Toggle = styled.button`
     outline: none;
   }
   transition: all 0.5s ease;
-  position:fixed;
-  bottom:5px;
-  right:5px;
-  z-index:5;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 5;
+  @media (max-width: 768px) {
+    top: 5px;
+    right: 5px;
+  }
+  @media (max-width: 375px) {
+    top: 5px;
+    right: 5px;
+  }
 `;
 const Page = styled.div`
   display: flex;
@@ -36,7 +44,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap:2rem;
+  gap: 2rem;
   margin-top: 5vh;
 `;
 
@@ -55,8 +63,8 @@ const Layout = (props) => {
       {/* <div className="container  flex"> */}
       <Container>
         <Toggle onClick={changeTheme}>{icon}</Toggle>
-        <Header theme={props.theme}/>
-        <Card theme={props.theme}/>
+        <Header theme={props.theme} />
+        <Card theme={props.theme} />
       </Container>
       {/* </div> */}
     </Page>
