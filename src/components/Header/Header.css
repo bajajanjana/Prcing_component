@@ -20,3 +20,13 @@
     font-size: small;
     text-align: justify;
 }
+/* @media(max-width:768px){
+    .line_change{
+        display: block;
+    }
+} */
+@media(max-width:375px){
+    .line_change{
+        display: block;
+    }
+}
