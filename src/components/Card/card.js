@@ -4,18 +4,13 @@ import "./card.css";
 import Perks_Nd_Trial from "./Perks_nd_trial/perks_nd_trial";
 import PriceSlider from "./Pricing/priceSlider";
 import Pricing from "./Pricing/Pricing";
-// const initial_price=[
-//     {
-//         pageviews:200,
-//         price:16,
-//     },
-// ];
+
 const initial_pageviews=10;
 const  initial_toggle=false;
 const Card=(props)=>{
     const [pageviews,setPrice]=useState(initial_pageviews);
     const [toggleSwitch,setSwitch]=useState(initial_toggle);
-    
+
     const priceHnadler=(newPageviews)=>{
     //    setPrice((prevPrices)=>{
     //        return [newPrice,...prevPrices];
@@ -29,14 +24,14 @@ const Card=(props)=>{
         setSwitch(inputSwitch);
     }
     const style={
-        color:"hsl(225, 20%, 60%)",
+       color: "hsl(225, 20%, 60%)",
     }
     if(props.theme==="dark")
     {
         style.color="hsl(227, 35%, 25%)";
     }
     return(
-        <div className="card">
+        <div  className="card" style={{backgroundColor: (props.theme==="dark"? "hsl(225, 20%, 60%)": "white")}}>
             <div className="container">
             <Pricing val={pageviews} toggleSwitchInput={toggleSwitch} theme={props.theme}/>
             <PriceSlider onChangeprice={priceHnadler} input={pageviews} toggleSwitchInput={toggleSwitch} theme={props.theme}/>

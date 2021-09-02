@@ -5,7 +5,6 @@
     border-radius: 10px;
     opacity: 0.8;
     height: 0.6rem;
-    /* background: linear-gradient(to right, green 0%, green 50%, #fff 50%, #fff 100%); */
 }
 .input_slider::-webkit-slider-thumb {
     -webkit-appearance: none; 
@@ -13,7 +12,6 @@
     width: 30px; 
     height: 30px; 
     outline: none;
-    /* background:hsl(174, 77%, 80%); */
     cursor: pointer; 
     border-radius: 20px;
     background-image: url("../../../images/icon-slider.svg");

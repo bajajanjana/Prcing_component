@@ -1,10 +1,13 @@
 import "./perks_nd_trial.css";
 import check from "../../../images/icon-check.svg";
-const Perks_Nd_Trial = () => {
+const Perks_Nd_Trial = (props) => {
   return (
     <div className="flex1">
       <div className="flex2">
-        <ul className="perks_list">
+        <ul
+          className="perks_list"
+          style={{ color: props.theme === "dark" ? "white" : "" }}
+        >
           <li>
             <img src={check}></img>
             Unlimited Websites

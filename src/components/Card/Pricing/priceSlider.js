@@ -1,5 +1,6 @@
 import CalculatePrice from "./calculatePrice";
 import "./priceSlider.css";
+
 const PriceSlider = (props) => {
   const inputHandler = (event) => {
     props.onChangeprice(event.target.value);
@@ -7,6 +8,7 @@ const PriceSlider = (props) => {
 
   // console.log("in priceslider");
   // console.log(props.toggleSwitchInput);
+
   return (
     <div>
       <input
@@ -22,7 +24,7 @@ const PriceSlider = (props) => {
           input_pageview={props.input}
           switchState={props.toggleSwitchInput}
         />
-        <p> /month</p>
+        <p style={{ color: props.theme === "dark" ? "white" : "" }}> /month</p>
       </div>
     </div>
   );

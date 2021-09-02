@@ -5,6 +5,9 @@
     border-radius: 5px;
     box-shadow: 0px 2px 10px 2px hsl(223, 50%, 87%);
 }
+.bgcolor{
+    background-color: hsl(225, 20%, 60%);
+}
 .container{
     padding: 2rem;
 }

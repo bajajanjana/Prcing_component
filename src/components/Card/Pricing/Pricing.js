@@ -6,10 +6,10 @@ const Pricing=(props)=>{
     // console.log(props.toggleSwitchInput);
     return(
         <div className="pricing">
-            <p>{props.val}K PAGEVIEWS</p>
+            <p style={{color:(props.theme==="dark") ? "white":""}}>{props.val}K PAGEVIEWS</p>
             <div className="price_rate">
             <CalculatePrice input_pageview={props.val} switchState={props.toggleSwitchInput}/>
-            <p> /month</p>
+            <p style={{color:(props.theme==="dark") ? "white":""}}> /month</p>
             </div>
         </div>
     );
