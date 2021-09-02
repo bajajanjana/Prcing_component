@@ -10,7 +10,7 @@ const Header=(props)=>{
     return(
         <div className="header">
             <h4 style={style}>Simple,traffic-based pricing</h4>
-            <p style={style}><span className="line_change">Sign-up to our 30-day tria.</span>No credit card required.</p>
+            <p style={style}><span className="line_change">Sign-up to our 30-day trial. </span>No credit card required.</p>
         </div>
     );
 }
