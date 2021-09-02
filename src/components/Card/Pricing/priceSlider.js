@@ -1,10 +1,21 @@
-import React,{useState} from "react";
 import CalculatePrice from "./calculatePrice";
 import "./priceSlider.css";
+import $ from "jquery";
 
 const PriceSlider = (props) => {
   const inputHandler = (event) => {
     props.onChangeprice(event.target.value);
+
+    $('input[type="range"]').change(function () {
+      var val = ($(this).val() - $(this).attr('min')) / ($(this).attr('max') - $(this).attr('min'));
+      
+      $(this).css('background-image',
+                  '-webkit-gradient(linear, left top, right top, '
+                  + 'color-stop(' + val + ', hsl(174, 86%, 45%)), '
+                  + 'color-stop(' + val + ', hsl(224, 65%, 95%))'
+                  + ')'
+                  );
+  });
   };
 
   // console.log("in priceslider");

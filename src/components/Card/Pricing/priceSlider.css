@@ -5,6 +5,13 @@
     border-radius: 10px;
     opacity: 0.8;
     height: 0.6rem;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(0.08, hsl(174, 86%, 45%)),
+        color-stop(0.08, hsl(224, 65%, 95%))
+    );
 }
 .input_slider::-webkit-slider-thumb {
     -webkit-appearance: none; 
