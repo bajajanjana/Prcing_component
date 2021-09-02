@@ -1,3 +1,4 @@
+import React,{useState} from "react";
 import CalculatePrice from "./calculatePrice";
 import "./priceSlider.css";
 
@@ -8,7 +9,11 @@ const PriceSlider = (props) => {
 
   // console.log("in priceslider");
   // console.log(props.toggleSwitchInput);
-
+  let rate="month";
+  if(props.toggleSwitchInput==true)
+  {
+    rate="year";
+  }
   return (
     <div>
       <input
@@ -24,7 +29,7 @@ const PriceSlider = (props) => {
           input_pageview={props.input}
           switchState={props.toggleSwitchInput}
         />
-        <p style={{ color: props.theme === "dark" ? "white" : "" }}> /month</p>
+        <p style={{ color: props.theme === "dark" ? "white" : "" }}> /{rate}</p>
       </div>
     </div>
   );
